@@ -1,0 +1,114 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f8faff;
+  color: #444; /* tono más suave que #2b2b2b */
+  font-weight: 400; /* sin negrita */
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: white;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  font-weight: 500;        /* grosor medio, no muy grueso */
+  font-size: 20px;
+  color: #111;             /* tono oscuro */
+}
+
+header .brand-icon {
+  width: 28px;             /* tamaño del ícono */
+  height: auto;
+  margin-right: 8px;       /* pequeño espacio entre ícono y texto */
+  vertical-align: middle;
+}
+
+header nav a {
+  color: #00a8ff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+  font-weight: 400; /* texto más fino */
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #0267cb;
+}
+
+/* ====== INTRO ====== */
+.intro {
+  background-color: #e6f0ff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro h1 {
+  color: #333;
+  font-size: 2em;
+  font-weight: 500; /* título sin negrita */
+}
+
+.intro p {
+  max-width: 700px;
+  margin: 15px auto;
+  color: #555; /* texto más suave */
+  line-height: 1.6;
+}
+
+/* ====== GALERÍA DE VIDEOS ====== */
+.videos-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px;
+  justify-items: center;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  max-width: 380px;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 220px;
+  border: none;
+}
+
+.video-card p {
+  padding: 15px;
+  color: #555;
+  font-size: 14px;
+  background-color: #f8faff;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: white;
+  color: #555;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 400;
+}
